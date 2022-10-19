@@ -1,0 +1,28 @@
+10/18/2022 Tuesday 
+
+1. Getpass module
+2. sys --> In order to manipulate python runtimes 
+3. sys.modules --> Returns all built in python modules 
+4. sys.version --> Returns python version 
+5. sys.path --> returns python executable/binaries path 
+6. echo $PATH --> returns different binary locations 
+
+Scenario: Develop a script which finds files greater than 10 days in a given directory. 
+
+Algorithm --> Steps for solution 
+
+In Linux << i >> is for insensitive 
+
+sudo find <directory name> -iname "*.py"
+
+sudo find /var/log -type f -size +5M --> Finds files greater than 5m in size 
+
+sudo find /var/log -type f -size +5M -exec ls -l {} \;
+
+Human readable format 
+sudo find /var/log -type f -size +5M -exec ls -lh {} \;
+h --> human readable
+ sudo find /var/log -type f -mtime 10 -exec ls -lh {} \;
+
+
+ 1663605237.131501
